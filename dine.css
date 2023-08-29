@@ -1,0 +1,167 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    transition: all .3s linear;
+}
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+header{
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+background: pink;
+padding: 1rem 7%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+z-index: 1000;
+box-shadow: var(box-shadow);
+}
+
+header .logo{
+    color: black ;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+header .logo >i{
+    color: green; 
+}
+
+header .navbar a{
+font-size: 1.5rem;
+border-radius: .6rem;
+padding: .5rem 2rem;
+color: cornflowerblue;
+}
+header .navbar .active,
+ header .navbar a:hover{
+    color: lightskyblue;
+    background-color: palevioletred;
+ }
+
+ header .icons i,
+ header .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4rem;
+    line-height: 4rem;
+    width: 4rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: purple;
+    border-radius: 50%;
+    background-color: antiquewhite;
+}
+
+header .icons i:hover,
+header .icons a:hover{
+color: black;
+background-color:cadetblue;
+transform: rotate(360deg);
+}
+
+header .icons #menu-bar{
+    display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media screen and (max-width : 900px) {
+    html{
+        font-size: 50%;
+    }
+    header{
+        padding: 1rem 2rem;
+    }
+}
+@media screen and (max-width : 700px){
+    header .icons #menu-bar{
+        display: inline-block;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        border-bottom: .1rem solid black;
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+        header .navbar .active{
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+        }
+
+    header .navbar {
+        /* display: none; */
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: rgba(170, 156, 248, 0.356);
+    }
+    
+}
+@media screen and (max-width : 900px) {
+    html{
+        font-size: 45%;
+    }
+   
+}
+
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="dine.css">
+    <title>Document</title>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo"><i class="fa fa-truck"></i>At Door</a>
+    <nav class="navbar">
+        <!-- <ul class="navItems"> -->
+        <a class="active" href="#">Home</a>
+        <a href="#">Items</a>
+        <a href="#">Order</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Reviews</a>
+        
+    </nav>
+    <div class="icons">
+        <i class="fas fa-bars" id="menu-bar" onclick="myFunction()"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+        <i class="fa fa-phone" id="contact"></i>
+        <a href="#" class="fa fa-heart" id="heart"></a>
+        <a href="#" class="fa fa-shopping-cart" id="cart"></a>
+
+
+
+
+    </div>
+
+  </header>
+  <script>
+    function myFunction() {
+//   var x = document.getElementById("myTopnav");
+var nav=document.getElementsByClassName('navbar')[0];
+
+  if (nav.className === "navbar") {
+    nav.className += " responsive";
+  } else {
+    nav.className = "navbar";
+  }
+}
+//       let menu = document.querySelector('#menu-bar');
+//     menu.addEventListener('click',()=>{
+//         nav.style.display='block';
+//     })
+//     let navbar = document.querySelector('.navbar');
+
+// menu.onclick=()=>{
+    
+//     menu.classList.toggle('fa-times');
+//     navbar.classList.toggle('active');
+
+// };
+  </script>
+
+</body>
+</html>
